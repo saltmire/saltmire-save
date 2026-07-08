@@ -1,0 +1,23 @@
+config_version=5
+
+[application]
+
+config/name="Saltmire Save — One-Line Save/Load for Godot 4"
+config/description="One-line save/load for Godot 4 with encryption, schema migration, backup + corruption recovery, gzip compression, smart autosave and slot metadata."
+config/version="1.0.0"
+run/main_scene="res://demo/demo.tscn"
+config/features=PackedStringArray("4.6", "Forward Plus")
+
+[autoload]
+
+Save="*res://addons/saltmire_save/save.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/saltmire_save/plugin.cfg")
